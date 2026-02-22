@@ -36,11 +36,21 @@ ENV/
 .coverage
 htmlcov/
 
-# Local files
+# Environment
 .env
+.env.*
+!.env.example
+
+# Databases
 *.db
 *.sqlite
+*.sqlite3
+
+# Logs
 *.log
+
+# Type checking
+.mypy_cache/
 
 # Node (if TypeScript)
 node_modules/
